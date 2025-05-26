@@ -9,15 +9,17 @@
   gap: 16px;
   position: relative;
   z-index: 500;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .header-left {
   display: flex;
   align-items: center;
-  flex: 1;
+  flex: 1 1 100%;
   gap: 20px;
-  min-width: 200px;
-  position: relative;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
 .app-title {
@@ -25,6 +27,7 @@
   font-weight: 600;
   color: #293a4b;
   white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .menu-icon {
@@ -36,39 +39,39 @@
 
 .search-wrapper {
   position: relative;
-  flex: 1;
-  max-width: 320px;
   width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .search-bar {
-  padding: 8px 36px 8px 36px; /* Padding for both icons */
+  width: 100%;
+  padding: 8px 36px 8px 36px;
   border: 1px solid #d0d0d0;
   border-radius: 6px;
   font-size: 14px;
   outline: none;
-  width: 100%;
-  min-width: 180px;
-  max-width: 100%;
+  box-sizing: border-box;
 }
 
-.search-icon {
+.search-icon,
+.notification-icon {
   position: absolute;
-  left: 12px;
   top: 50%;
   transform: translateY(-50%);
-  color: #aaa;
   font-size: 16px;
+  color: #aaa;
   pointer-events: none;
 }
 
+.search-icon {
+  left: 12px;
+}
+
 .notification-icon {
-  position: absolute;
   right: 12px;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 16px;
   color: #555;
+  pointer-events: auto;
   cursor: pointer;
 }
 
@@ -78,6 +81,8 @@
   gap: 16px;
   flex-wrap: wrap;
   justify-content: flex-end;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .user-profile {
@@ -121,15 +126,27 @@
 
   .header-left,
   .header-right {
-    justify-content: space-between;
     width: 100%;
+    flex-direction: row; 
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
   }
 
   .search-wrapper {
     width: 100%;
+    max-width: 100%;
   }
 
   .search-bar {
+    width: 100%;
     max-width: 100%;
+    min-width: 100%;
+  }
+
+  .add-button {
+    width: auto;
+    flex-shrink: 0;
+    white-space: nowrap;
   }
 }
