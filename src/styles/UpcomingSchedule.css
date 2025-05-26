@@ -1,0 +1,32 @@
+.upcoming-schedule {
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+}
+
+.schedule-heading {
+  font-size: 20px;
+  font-weight: bold;
+  color: #2b2d42;
+  margin-bottom: 16px;
+}
+
+.schedule-group {
+  margin-bottom: 24px;
+    margin: auto;
+
+}
+
+.group-day {
+  color: #2ad22a;
+  font-weight: 600;
+  margin-bottom: 12px;
+  padding: 20px;
+}
+
+.card-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}

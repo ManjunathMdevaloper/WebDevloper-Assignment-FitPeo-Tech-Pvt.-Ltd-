@@ -1,0 +1,40 @@
+.dashboard-container {
+  flex: 1;
+  padding: 24px;
+  background-color: #f5f7fa;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  overflow-y: auto;
+  width: 100%;
+}
+
+.dashboard-container h4 {
+  color: #0048ff;
+  font-weight: 600;
+  margin: -15px 0 -20px 0;
+}
+
+.top-section,
+.middle-section,
+.bottom-section {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+@media (max-width: 1024px) {
+  .top-section,
+  .middle-section,
+  .bottom-section {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 1600px) {
+  .dashboard-container {
+    max-width: 1440px;
+    margin: auto;
+  }
+}

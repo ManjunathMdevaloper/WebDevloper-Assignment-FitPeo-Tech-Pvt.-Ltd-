@@ -1,0 +1,102 @@
+.activity-feed {
+  background-color: #f9fbff;
+  border-radius: 16px;
+  padding: 20px;
+  flex: 1;
+  min-width: 280px;
+  max-width: 60%;
+  font-family: 'Segoe UI', sans-serif;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  width: 60%;
+  overflow-x: hidden;
+  margin: auto;
+}
+
+.activity-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.activity-chart {
+  display: flex;
+  align-items: flex-end;
+  overflow-x: auto;
+  padding-bottom: 8px;
+  gap: 16px;
+  min-width: 100%;
+  scroll-behavior: smooth;
+}
+
+.day-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 48px;
+}
+
+.bars {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 6px;
+}
+
+.bar {
+  width: 6px;
+  border-radius: 4px;
+  transition: height 0.2s ease-in-out;
+}
+
+.bar-0 {
+  background-color: #aab2bd;
+}
+.bar-1 {
+  background-color: #00d1ff;
+}
+.bar-2 {
+  background-color: #5e5ce6;
+}
+
+.day-label {
+  font-size: 12px;
+  color: #888;
+}
+
+@media (max-width: 768px) {
+  .activity-feed {
+    padding: 16px;
+  }
+
+  .activity-chart {
+    gap: 12px;
+  }
+
+  .bar {
+    width: 5px;
+  }
+
+  .day-column {
+    min-width: 40px;
+  }
+
+  .day-label {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 480px) {
+  .activity-chart {
+    gap: 10px;
+  }
+
+  .bar {
+    width: 4px;
+  }
+
+  .day-column {
+    min-width: 36px;
+  }
+}

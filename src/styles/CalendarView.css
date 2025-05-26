@@ -1,0 +1,126 @@
+.calendar-view {
+  flex: 1;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.08);
+  min-width: 280px;
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.calendar-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 16px;
+  color: #2c3e50;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 6px;
+  margin-bottom: 24px;
+  color: #0048ff;
+    margin: auto;
+
+}
+
+.calendar-day {
+  background-color: #f0f4f8;
+  border-radius: 6px;
+  padding: 8px;
+  min-height: 60px;
+  color: #000;
+  text-align: center;
+}
+
+.day-label {
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 4px;
+  text-align: center;
+}
+
+.appointments {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.appointment-time-c {
+  color: #000;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 11px;
+  display: inline-block;
+  text-align: center;
+  background-color: #e0e7ff;
+}
+
+.appointment-time {
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 11px;
+  display: inline-block;
+  color: #ffffff;
+  background-color: #0048ff;
+}
+
+.calendar-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 16px;
+}
+
+.appointment-card {
+  background-color: #bacdff;
+  padding: 12px 16px;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+  min-width: 120px;
+  color: #0048ff;
+}
+
+.appointment-card:nth-child(1) {
+  background-color: #0048ff;
+  color: white;
+}
+
+.appointment-title {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.appointment-card .appointment-time {
+  font-size: 12px;
+  margin-top: 4px;
+  font-weight: bold;
+  color: #eaeaea;
+}
+
+@media (max-width: 768px) {
+  .calendar-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+  }
+
+  .calendar-view {
+    padding: 16px;
+  }
+
+  .appointment-title {
+    font-size: 13px;
+  }
+
+  .calendar-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 1600px) {
+  .calendar-view {
+    max-width: 1400px;
+    margin: auto;
+  }
+}
