@@ -4,7 +4,7 @@ A pixel-perfect, responsive, static healthcare dashboard built with React and Vi
 
 ## 🚀 Live Demo
 
-🔗 [Click here to view the live app]([https://your-vercel-link.vercel.app](https://web-devloper-assignment-fit-peo-tech-pvt-ltd.vercel.app/))
+🔗 [Click here to view the live app](https://web-devloper-assignment-fit-peo-tech-pvt-ltd.vercel.app/))
 
 ## 📁 Features
 
