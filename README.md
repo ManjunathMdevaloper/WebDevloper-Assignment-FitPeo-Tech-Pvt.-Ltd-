@@ -2,11 +2,9 @@
 
 A pixel-perfect, responsive, static healthcare dashboard built with React and Vite, based on the provided UI design.
 
-![Screenshot](https://i.ibb.co/B2DdGkgF/Screenshot-2025-05-23-at-3-31-31-PM.png)
-
 ## 🚀 Live Demo
 
-🔗 [Click here to view the live app](https://your-vercel-link.vercel.app)
+🔗 [Click here to view the live app]([https://your-vercel-link.vercel.app](https://web-devloper-assignment-fit-peo-tech-pvt-ltd.vercel.app/))
 
 ## 📁 Features
 
