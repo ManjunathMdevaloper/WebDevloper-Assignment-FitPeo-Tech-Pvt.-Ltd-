@@ -1,12 +1,34 @@
-# React + Vite
+# Healthcare Dashboard (React)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A pixel-perfect, responsive, static healthcare dashboard built with React and Vite, based on the provided UI design.
 
-Currently, two official plugins are available:
+## 🚀 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🔗 [Click here to view the live app](https://web-devloper-assignment-fit-peo-tech-pvt-ltd.vercel.app/))
 
-## Expanding the ESLint configuration
+## 📁 Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Fully responsive layout (mobile, tablet, desktop)
+- Sidebar with navigation
+- Header with search, notification, avatar
+- Anatomy section with health status indicators
+- Calendar with static appointments
+- Upcoming schedule and activity chart
+- Clean component-based structure
+- Static mock data only (no interactivity)
+
+## 📦 Tech Stack
+
+- React + Vite
+- Standard CSS
+- Lucide Icons
+- Deployed via Vercel
+
+## 📂 Folder Structure
+
+src/
+├── assets/ # Images and icons
+├── components/ # All reusable React components
+├── data/ # Mock data JS files
+├── styles/ # CSS files for components
+└── App.jsx # Root component
